@@ -1,0 +1,25 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h1>Samples</h1>
+    </div>
+    <div class="panel-body">
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Key</th>
+                    <th>Value</th>
+                    <th>Active</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let sample of samples | async">
+                    <td>{{sample.id}}</td>
+                    <td>{{sample.key}}</td>
+                    <td>{{sample.value}}</td>
+                    <td>{{sample.active}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
